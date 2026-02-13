@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Starlight AI Toolbox</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brandMark">★</div>
+      <div>
+        <div class="brandName">Starlight AI Toolbox</div>
+        <div class="brandTag">Your curated AI command center</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <div class="searchWrap">
+        <input id="search" class="search" type="search" placeholder="Search tools… (press /)" autocomplete="off" />
+        <button id="clearSearch" class="iconBtn" title="Clear">✕</button>
+      </div>
+      <button id="themeToggle" class="pillBtn" title="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="sideTitle">Categories</div>
+      <div id="categoryList" class="categoryList"></div>
+
+      <div class="sideTitle">Quick filters</div>
+      <div class="chips">
+        <button class="chip" data-filter="all">All</button>
+        <button class="chip" data-filter="favorites">★ Favorites</button>
+      </div>
+
+      <div class="hint">
+        <div><kbd>/</kbd> focus search</div>
+        <div><kbd>Esc</kbd> clear</div>
+      </div>
+    </aside>
+
+    <section class="content">
+      <div id="status" class="status"></div>
+      <div id="sections" class="sections"></div>
+    </section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
